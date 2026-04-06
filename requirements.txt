@@ -1,0 +1,26 @@
+# requirements.txt — Layer 1 dependencies
+# Install with: pip install -r requirements.txt
+
+# Core
+python-dotenv==1.0.1
+pydantic==2.7.4
+requests==2.32.3
+
+# LLM & Agent Framework
+langchain==0.2.16
+langchain-core==0.2.38
+langchain-groq==0.1.9
+langgraph==0.2.14
+crewai==0.63.6
+crewai-tools==0.12.1
+
+# Data APIs
+yfinance==0.2.40
+feedparser==6.0.11
+
+# Async utilities
+aiolimiter==1.1.0
+tenacity==8.3.0
+
+# Warnings suppression
+urllib3==2.2.2
