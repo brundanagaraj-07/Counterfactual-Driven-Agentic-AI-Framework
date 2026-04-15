@@ -50,7 +50,7 @@ from tools import (
 
 # ── LLM (shared across all agents) ───────────────────────────────────────────
 LLM = ChatGroq(
-    model="groq/llama-3.3-70b-versatile",  # Use groq/ prefix for LiteLLM compatibility
+    model="groq/llama-3.1-8b-instant",  # Use groq/ prefix for LiteLLM compatibility
     groq_api_key=os.getenv("GROQ_API_KEY"),
     temperature=0,
 )

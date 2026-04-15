@@ -1,0 +1,49 @@
+{
+  "domain": "supply_chain",
+  "fetched_at": "2026-04-15T17:58:57.699767",
+  "enriched_at": "2026-04-15T18:00:03.229355",
+  "layer1_completeness": 0.0,
+  "news": [],
+  "social": [],
+  "stocks": [],
+  "ports": [],
+  "weather": [],
+  "commodities": [],
+  "errors": [
+    {
+      "agent_name": "SocialAgent",
+      "reason": "litellm.RateLimitError: RateLimitError: GroqException - {\"error\":{\"message\":\"Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01knes2agje7avvzjgeshvmg1x` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5684, Requested 1040. Please try again in 7.24s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n",
+      "timestamp": "2026-04-15T17:58:55.471710"
+    },
+    {
+      "agent_name": "StockAgent",
+      "reason": "litellm.RateLimitError: RateLimitError: GroqException - {\"error\":{\"message\":\"Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01knes2agje7avvzjgeshvmg1x` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5683, Requested 1245. Please try again in 9.28s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n",
+      "timestamp": "2026-04-15T17:58:55.848002"
+    },
+    {
+      "agent_name": "PortAgent",
+      "reason": "litellm.RateLimitError: RateLimitError: GroqException - {\"error\":{\"message\":\"Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01knes2agje7avvzjgeshvmg1x` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5981, Requested 1143. Please try again in 11.24s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n",
+      "timestamp": "2026-04-15T17:58:56.301364"
+    },
+    {
+      "agent_name": "WeatherAgent",
+      "reason": "litellm.RateLimitError: RateLimitError: GroqException - {\"error\":{\"message\":\"Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01knes2agje7avvzjgeshvmg1x` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5996, Requested 1056. Please try again in 10.52s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n",
+      "timestamp": "2026-04-15T17:58:56.359366"
+    },
+    {
+      "agent_name": "CommodityAgent",
+      "reason": "litellm.RateLimitError: RateLimitError: GroqException - {\"error\":{\"message\":\"Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01knes2agje7avvzjgeshvmg1x` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5984, Requested 1048. Please try again in 10.319999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n",
+      "timestamp": "2026-04-15T17:58:56.582814"
+    },
+    {
+      "agent_name": "NewsAgent",
+      "reason": "litellm.RateLimitError: RateLimitError: GroqException - {\"error\":{\"message\":\"Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01knes2agje7avvzjgeshvmg1x` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5881, Requested 571. Please try again in 4.52s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n",
+      "timestamp": "2026-04-15T17:58:57.699767"
+    }
+  ],
+  "aggregate_sentiment": "neutral",
+  "avg_reliability": 0.0,
+  "top_geo_tags": [],
+  "sentiment_breakdown": {},
+  "total_items": 0
+}
