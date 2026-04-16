@@ -247,22 +247,74 @@ pip install "setuptools<81"
 
 ---
 
-## Next Steps (Layer 2+)
+## 🔹 Layer 2: NLP Enrichment Pipeline
 
-After running Layer 1:
+Layer 2 transforms structured data into **context-aware insights** using transformer-based NLP.
 
-1. **Layer 2 (NLP Enrichment)** → HuggingFace transformers
-   - Sentiment analysis on news/social
-   - NER (Named Entity Recognition) for companies/ports
-   - Aspect-based sentiment
+### Overview
 
-2. **Layer 3 (Risk Scoring)**
-   - Aggregate signals into risk indices
-   - Forecast supply chain disruptions
+- **SentimentAgent** → Sentiment analysis on news/social  
+- **NERAgent** → Extract companies, ports, locations  
+- **AspectAgent** → Aspect-based sentiment detection  
 
-3. **Layer 4 (Visualization)**
-   - Real-time dashboards
-   - Risk heatmaps by geography/company
+Output: `EnrichedSignalBundle`
+
+---
+
+### Architecture
+
+NLP Pipeline
+    ├─ SentimentAgent
+    ├─ NERAgent
+    ├─ AspectAgent
+         ↓
+    EnrichedSignalBundle
+         ↓
+    enriched_signals.json
+
+---
+
+### Data Flow
+
+1. Input: RiskInputBundle  
+2. NLP Processing  
+3. Output: EnrichedSignalBundle  
+
+---
+
+## 🔹 Layer 3: Risk Scoring Engine
+
+Layer 3 converts enriched signals into **risk scores and predictions**.
+
+### Overview
+
+- **RiskAggregator**
+- **RiskScorer**
+- **ForecastAgent**
+
+Output: `RiskScoreBundle`
+
+---
+
+### Architecture
+
+Risk Pipeline
+    ├─ RiskAggregator
+    ├─ RiskScorer
+    ├─ ForecastAgent
+         ↓
+    RiskScoreBundle
+         ↓
+    risk_scores.json
+
+---
+
+### Data Flow
+
+1. Input: EnrichedSignalBundle  
+2. Compute risk indices  
+3. Forecast disruptions  
+4. Output: RiskScoreBundle  
 
 ---
 
